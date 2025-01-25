@@ -3,6 +3,8 @@
 
 ![img](Demonstration/logo.png)
 
+:dizzy: Аналог [AmneziaWG + MikroTik](https://github.com/catesin/AmneziaVPN-MikroTik)
+
 
 В данном репозитории рассматривается работа MikroTik RouterOS V7.17+ с протоколом **XRay Vless Reality**. В процессе настройки, относительно вашего оборудования, следует выбрать вариант реализации с [контейнером](https://help.mikrotik.com/docs/display/ROS/Container) внутри RouterOS или без контейнера. 
 
