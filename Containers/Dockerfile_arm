@@ -3,16 +3,16 @@ ARG ALPINE_VERSION=3.21
 #--------------------------------Image--------------------------------
 FROM alpine:${ALPINE_VERSION}
 RUN set -ex; \
-apk update && apk add --no-cache bash openrc openresolv iproute2 libqrencode 
+apk update && apk add --no-cache bash openrc openresolv iproute2 libqrencode p7zip
 
 #Tun2Socks
 RUN mkdir /opt/tun2socks/
-COPY ./tun2socks/tun2socks-linux-armv7 /opt/tun2socks/tun2socks
+COPY ./tun2socks/tun2socks-linux-armv7.7z /opt/tun2socks/tun2socks.7z
 
 #Xray core
 RUN mkdir /opt/xray/
 RUN mkdir /opt/xray/config/
-COPY ./xray-core/Xray-linux-arm32-v7a /opt/xray/xray
+COPY ./xray-core/Xray-linux-arm32-v7a.7z /opt/xray/xray.7z
 
 COPY ./start.sh /opt/start.sh
 RUN chmod +x /opt/start.sh
