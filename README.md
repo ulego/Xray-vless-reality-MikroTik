@@ -153,6 +153,7 @@ add slot=ramstorage tmpfs-max-size=100M type=tmpfs
 Например, вы хотите разместить контейнер в каталоге /usb1/docker/xray. Не создавайте заранее каталог xray на USB-флеш-накопителе. При создании контейнера добавьте в команду распаковки параметр "root-dir=usb1/docker/xray", в этом случае контейнер распакуется самостоятельно создав каталог /usb1/docker/xray и запустится без проблем.
 
 **В RouterOS выполняем:**
+
 0) Подключем Docker HUB в наш RouterOS
 ```
 /file add type=directory name=ramstorage
