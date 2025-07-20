@@ -206,12 +206,12 @@ add key=SHORT_ID_SID name=xvr value=29d2d3d5a398
 ```
 
 7) Теперь создадим сам контейнер. Здесь вам нужно выбрать репозиторий из [Docker Hub](https://hub.docker.com/u/catesin) с архитектурой под ваше устройство.
-   Мой вариант для arm docker pull ulego/xray:last
+  
 Варианты:
 - catesin/xray-mikrotik-amd64
 - catesin/xray-mikrotik-arm
 - catesin/xray-mikrotik-arm64
-
+**Мой вариант для arm**  ```docker pull ulego/xray:last```
 Пример импорта контейнера в ramstorage (по факту в оперативную память) для arm64. Подставьте в ```remote-image``` нужный репозиторий и отредактируйте местоположение контейнера в ```root-dir``` при необходимости.
 
 ```
