@@ -210,8 +210,8 @@ add key=SHORT_ID_SID name=xvr value=29d2d3d5a398
 Варианты:
 - catesin/xray-mikrotik-amd64
 - catesin/xray-mikrotik-arm
-- catesin/xray-mikrotik-arm64
-**Мой вариант для arm**  ```docker pull ulego/xray:last```
+- catesin/xray-mikrotik-arm64  
+**Мой вариант для arm**  ```docker pull ulego/xray:last```  
 Пример импорта контейнера в ramstorage (по факту в оперативную память) для arm64. Подставьте в ```remote-image``` нужный репозиторий и отредактируйте местоположение контейнера в ```root-dir``` при необходимости.
 
 ```
