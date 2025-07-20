@@ -206,7 +206,7 @@ add key=SHORT_ID_SID name=xvr value=29d2d3d5a398
 ```
 
 7) Теперь создадим сам контейнер. Здесь вам нужно выбрать репозиторий из [Docker Hub](https://hub.docker.com/u/catesin) с архитектурой под ваше устройство.
-
+   Мой вариант для arm docker pull ulego/xray:last
 Варианты:
 - catesin/xray-mikrotik-amd64
 - catesin/xray-mikrotik-arm
